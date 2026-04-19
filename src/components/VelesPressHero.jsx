@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
 const books = [
   {
@@ -392,15 +393,20 @@ export default function VelesPressHero() {
 
         {/* Nav links */}
         <div style={{ display: "flex", gap: 40 }}>
-          {["Catalogue", "Series", "Authors", "About"].map(link => (
-            <a key={link} className="nav-link">{link}</a>
+          {[
+            {label:"Catalogue", to:"/#catalogue"},
+            {label:"Series", to:"/#series"},
+            {label:"Authors", to:"/authors"},
+            {label:"About", to:"/about"},
+          ].map(({label,to}) => (
+            <Link key={label} to={to} className="nav-link">{label}</Link>
           ))}
         </div>
 
         {/* CTA */}
-        <button className="cta-btn" style={{ padding: "10px 24px", fontSize: 9 }}>
+        <Link to="/books/throne-of-ashes" className="cta-btn" style={{ padding: "10px 24px", fontSize: 9 }}>
           <span>New Release</span>
-        </button>
+        </Link>
       </nav>
 
       {/* HERO */}
@@ -492,10 +498,10 @@ export default function VelesPressHero() {
             transition: "all 0.8s ease 1.1s",
           }}>
             <button className="cta-btn"><span>Explore Catalogue</span></button>
-            <button className="cta-btn-2">
-              <span>Latest Release</span>
+            <Link to={book.slug ? `/books/${book.slug}` : "/"} className="cta-btn-2" style={{textDecoration:"none"}}>
+              <span>View Book</span>
               <span style={{ color: book.color }}>→</span>
-            </button>
+            </Link>
           </div>
 
           {/* Book selector dots */}
@@ -556,6 +562,7 @@ export default function VelesPressHero() {
             position: "relative",
           }}>
             {/* Book cover */}
+            <Link to={book.slug ? `/books/${book.slug}` : "/"} style={{display:"block",textDecoration:"none",cursor:book.slug?"pointer":"default"}}>
             <div style={{
               width: 280,
               height: 420,
@@ -569,7 +576,11 @@ export default function VelesPressHero() {
                 inset 0 1px 0 rgba(255,255,255,0.05)
               `,
               animation: "float 6s ease-in-out infinite",
-            }}>
+              transition: "transform 0.3s ease",
+            }}
+            onMouseEnter={e => { if(book.slug) e.currentTarget.style.transform="scale(1.02)"; }}
+            onMouseLeave={e => e.currentTarget.style.transform="scale(1)"}
+            >
               {/* Real cover image */}
               {book.coverUrl && (
                 <img
@@ -712,6 +723,7 @@ export default function VelesPressHero() {
               }} />
             </div>
 
+            </Link>
             {/* Book page edges */}
             <div style={{
               position: "absolute",

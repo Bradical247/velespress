@@ -1,34 +1,15 @@
-// ─── BOOK DATA ────────────────────────────────────────────────────────────────
-
 export const BOOKS = [
-  // ── THE NAMES BENEATH ──────────────────────────────────────────────────────
-  {
-    id: 1,
-    slug: "throne-of-ashes",
-    title: "Throne of Ashes",
-    series: "The Names Beneath",
-    seriesId: "names-beneath",
-    number: "I",
-    color: "#C9A84C",
-    accent: "#E05C3A",
-    status: "available",
-    year: 2026,
-    coverUrl: "/covers/throne-of-ashes.jpg",
-    amazonUrl: "https://www.amazon.com/dp/B0G2GKK43H",
-    blurb: "The first god-name has been spoken. Now the heir must learn what it costs to carry it.",
-    synopsis: `He can read the hidden name of anything. Except himself.
+  { id:1,  slug:"throne-of-ashes",        title:"Throne of Ashes",           series:"The Names Beneath",      seriesId:"names-beneath", number:"I",   genre:"Dark Fantasy",          color:"#C9A84C", accent:"#E05C3A", status:"available",   year:2026, coverUrl:"/covers/throne-of-ashes.jpg",      amazonUrl:"https://www.amazon.com/dp/B0G2GKK43H", blurb:"The first god-name has been spoken. Now the heir must learn what it costs to carry it.",            synopsis:`He can read the hidden name of anything. Except himself.
 
-Khemet sees the names that live beneath human skin — the secret truths people carry without knowing, written in the language of the soul. For eleven years, he has used this gift to serve as a temple scribe in Thebes, cataloguing ancient texts while carefully ignoring the shadow names that pulse behind every face he encounters. It's a life of quiet service, intellectual precision, and deliberate invisibility.
+Khemet sees the names that live beneath human skin — the secret truths people carry without knowing, written in the language of the soul. For eleven years, he has used this gift to serve as a temple scribe in Thebes, cataloguing ancient texts while carefully ignoring the shadow names that pulse behind every face he encounters. A life of quiet service, intellectual precision, and deliberate invisibility.
 
 Then his brother Sutekh arrives with a smile too warm and a letter sealed with their dead father's words. Within days, Khemet finds himself stripped of position, cast into exile, and forced to confront a terrible possibility: that the brother he thought he knew carries the most dangerous shadow name of all.
 
 When betrayal opens a gate to the Duat — Egypt's mythic underworld — Khemet must descend through the twelve gates of his own psyche, where forgotten gods speak in riddles and every threshold demands he surrender another piece of who he thought he was.
 
-This is not a quest for revenge. It's something far more perilous: a journey toward sovereignty.
+This is not a quest for revenge. It is something far more perilous: a journey toward sovereignty.
 
-Drawing on the archetypal cycle of death and rebirth found in Egyptian mythology, The Throne of Ashes maps the complete psychological transformation of a man who must die to his old self to claim the divine authority that sleeps in every human soul. Part literary fantasy, part mythological thriller — a novel about the price of seeing clearly in a world built on beautiful lies.`,
-    chapterTitle: "Chapter One — The House of Names",
-    chapter: `The woman who came to pray for her husband's safe return carried a different name beneath the one she spoke aloud.
+Drawing on the archetypal cycle of death and rebirth found in Egyptian mythology, The Throne of Ashes maps the complete psychological transformation of a man who must die to his old self to claim the divine authority that sleeps in every human soul. Part literary fantasy, part mythological thriller — a novel about the price of seeing clearly in a world built on beautiful lies.`, chapterTitle:"Chapter One — The House of Names", chapter:`The woman who came to pray for her husband's safe return carried a different name beneath the one she spoke aloud.
 
 Khemet saw it the moment she crossed the threshold of the hypostyle hall, passing from the white morning glare into the columned dark where the air tasted of natron and old stone. Her given name was Takhaet: she had announced it to the temple attendant in the clear, practised voice of a woman accustomed to being heard. But the name that lived beneath her skin, the one she did not know she carried, the one that pulsed like a second heartbeat behind the careful architecture of her face, read differently. It read as: the one who has already buried him.
 
@@ -114,23 +95,23 @@ Meritaten looked at him for the first time. Her eyes were the colour of dark hon
 
 "Not that kind of name."
 
-She studied him with the frank, unhurried assessment of someone who spent her days looking at things most people couldn't bear to see. Then she ate another date.
+She studied him with the frank, unhurried assessment of someone who spent her days looking at things most people could not bear to see. Then she ate another date.
 
-"My grandmother used to say that the gods gave some people a third eye," she said. "But they forgot to give them the eyelid. So they see everything and can't stop seeing it, and eventually the seeing eats them alive." She paused. "She also said that the cure was to stop being so impressed with yourself for seeing things. The dead see everything, and they're not especially proud of it."
+"My grandmother used to say that the gods gave some people a third eye," she said. "But they forgot to give them the eyelid. So they see everything and cannot stop seeing it, and eventually the seeing eats them alive." She paused. "She also said that the cure was to stop being so impressed with yourself for seeing things. The dead see everything, and they are not especially proud of it."
 
 Khemet almost smiled. It was a rare enough event that Meritaten noticed.
 
 "There it is," she said. "Evidence of life. I was beginning to wonder."
 
-Nebamun appeared at the workshop entrance, wiping his hands on a cloth. He handed Khemet a sealed jar of resin without ceremony. "Good quality," he said. "Don't mix it with that sand-contaminated rubbish from the temple stores. It deserves better."
+Nebamun appeared at the workshop entrance, wiping his hands on a cloth. He handed Khemet a sealed jar of resin without ceremony. "Good quality," he said. "Do not mix it with that sand-contaminated rubbish from the temple stores. It deserves better."
 
-Khemet paid him, thanked him, and stood to leave. The sun had dropped behind the hills, and the necropolis was entering its twilight phase: the hour when the workers finished, the mourners departed, and the dead had the place to themselves.
+Khemet paid him, thanked him, and stood to leave. The sun had dropped behind the hills, and the necropolis was entering its twilight phase.
 
 "Scribe," Meritaten called after him.
 
 He turned.
 
-"The thing about names," she said, still sitting on her wall, still holding a date, silhouetted against the last copper light, "is that everyone has one they don't know about. Including you."
+"The thing about names," she said, still sitting on her wall, still holding a date, silhouetted against the last copper light, "is that everyone has one they do not know about. Including you."
 
 She bit into the date. He walked back toward the city of the living. Behind him, the necropolis settled into its nightly silence, and somewhere beneath the silence, so deep he could not be sure he heard it, there was a hum. A vibration in the bedrock, felt through the soles of his sandals more than heard. The sound of something vast and patient, breathing in the dark.
 
@@ -144,7 +125,7 @@ He lit the lamp, set the resin jar on the table, and saw the letter.
 
 It had been pushed under his door, which meant it had arrived by private courier rather than through the temple's mail system. The seal was red wax stamped with a falcon: the personal mark of his brother, Sutekh, who commanded the garrison at Tjaru on the eastern frontier.
 
-He did not read his brother's shadow name. Not because he couldn't — a letter carried enough of the writer's essence for the perception to operate, if weakly — but because he had made a decision, years ago, not to look. There were names you did not want to know. There were truths that, once perceived, could not be unperceived, and whatever lived beneath his brother's surface was something Khemet had chosen, with great deliberateness, not to see.
+He did not read his brother's shadow name. Not because he could not — a letter carried enough of the writer's essence for the perception to operate, if weakly — but because he had made a decision, years ago, not to look. There were names you did not want to know. There were truths that, once perceived, could not be unperceived, and whatever lived beneath his brother's surface was something Khemet had chosen, with great deliberateness, not to see.
 
 He broke the seal.
 
@@ -164,148 +145,34 @@ Later, when the world had come apart and the pieces were scattered across the da
 
 He blew out the lamp. In the darkness, the lapis scarab caught the last light from the window and held it for a moment, a small blue star in a room full of nothing, and then that too went dark.
 
-Somewhere, beneath the city, beneath the river, beneath the stone and the sand and the layered dead, the hum continued.`,
-  },
-  {
-    id: 2,
-    slug: "the-red-land",
-    title: "The Red Land",
-    series: "The Names Beneath",
-    seriesId: "names-beneath",
-    number: "II",
-    color: "#B05050",
-    accent: "#C9A84C",
-    status: "available",
-    year: 2026,
-    coverUrl: "/covers/red-land.jpg",
-    amazonUrl: null,
-    blurb: "Beyond the Black Land lies the Red — chaos, exile, and the god who dwells there willingly.",
-    synopsis: `SYNOPSIS_PLACEHOLDER`,
-    chapterTitle: "Chapter One",
-    chapter: `CHAPTER_PLACEHOLDER`,
-  },
-  {
-    id: 3,
-    slug: "the-gathering-field",
-    title: "The Gathering Field",
-    series: "The Names Beneath",
-    seriesId: "names-beneath",
-    number: "III",
-    color: "#2A6C3C",
-    accent: "#E05C3A",
-    status: "forthcoming",
-    year: 2026,
-    coverUrl: "/covers/gathering-field.jpg",
-    amazonUrl: null,
-    blurb: "The field where the dead gather has been waiting for her since birth.",
-    synopsis: `SYNOPSIS_PLACEHOLDER`,
-    chapterTitle: "Chapter One",
-    chapter: `CHAPTER_PLACEHOLDER`,
-  },
-  {
-    id: 4,
-    slug: "the-luminous-dark",
-    title: "The Luminous Dark",
-    series: "The Names Beneath",
-    seriesId: "names-beneath",
-    number: "IV",
-    color: "#3C4C5C",
-    accent: "#C9A84C",
-    status: "forthcoming",
-    year: 2027,
-    coverUrl: "/covers/luminous-dark.jpg",
-    amazonUrl: null,
-    blurb: "All names return to the source. All fires return to the flame.",
-    synopsis: `SYNOPSIS_PLACEHOLDER`,
-    chapterTitle: "Chapter One",
-    chapter: `CHAPTER_PLACEHOLDER`,
-  },
-
-  // ── THE CARVED WALL ────────────────────────────────────────────────────────
-  { id: 5,  slug: null, title: "Before the Carving",      series: "The Carved Wall",       seriesId: "carved-wall",     number: "I",   color: "#8A4C3C", status: "forthcoming", year: 2026, blurb: "The first mark was not written. It was remembered." },
-  { id: 6,  slug: null, title: "The First Mark",          series: "The Carved Wall",       seriesId: "carved-wall",     number: "II",  color: "#7A4A3A", status: "forthcoming", year: 2027, blurb: "To carve is to choose. To choose is to divide the world." },
-  { id: 7,  slug: null, title: "What the Wall Remembers", series: "The Carved Wall",       seriesId: "carved-wall",     number: "III", color: "#6A4030", status: "forthcoming", year: 2027, blurb: "Walls do not forget. They wait." },
-
-  // ── THE BORROWED NAME ──────────────────────────────────────────────────────
-  { id: 8,  slug: null, title: "The Weight of It",        series: "The Borrowed Name",     seriesId: "borrowed-name",   number: "I",   color: "#7A5C8A", status: "forthcoming", year: 2027, blurb: "The war is over. The names remain. Now comes the harder work." },
-  { id: 9,  slug: null, title: "A Name That Fits",        series: "The Borrowed Name",     seriesId: "borrowed-name",   number: "II",  color: "#6A4C7A", status: "forthcoming", year: 2027, blurb: "Borrowed things never feel entirely yours." },
-  { id: 10, slug: null, title: "The Inheritance",         series: "The Borrowed Name",     seriesId: "borrowed-name",   number: "III", color: "#5A3C6A", status: "forthcoming", year: 2028, blurb: "What you pass on is never only what you intended." },
-
-  // ── THE PATIENT EMPIRES ────────────────────────────────────────────────────
-  {
-    id: 11,
-    slug: "the-patient-empires",
-    title: "The Patient Empires",
-    series: "Patient Empires",
-    seriesId: "patient",
-    number: "I",
-    color: "#4C7CA8",
-    accent: "#C9A84C",
-    status: "available",
-    year: 2026,
-    coverUrl: "/covers/patient-empires.jpg",
-    amazonUrl: null,
-    blurb: "Four operatives. Four governments. One collapse none of them could stop — or wanted to.",
-    synopsis: `SYNOPSIS_PLACEHOLDER`,
-    chapterTitle: "Chapter One",
-    chapter: `CHAPTER_PLACEHOLDER`,
-  },
-  {
-    id: 12,
-    slug: "the-unresolved-variable",
-    title: "The Unresolved Variable",
-    series: "Patient Empires",
-    seriesId: "patient",
-    number: "II",
-    color: "#3C6C98",
-    accent: "#C9A84C",
-    status: "forthcoming",
-    year: 2026,
-    coverUrl: "/covers/unresolved-variable.jpg",
-    amazonUrl: null,
-    blurb: "The variable no model predicted has begun to move.",
-    synopsis: `SYNOPSIS_PLACEHOLDER`,
-    chapterTitle: "Chapter One",
-    chapter: `CHAPTER_PLACEHOLDER`,
-  },
-  {
-    id: 13,
-    slug: "the-inheritors",
-    title: "The Inheritors",
-    series: "Patient Empires",
-    seriesId: "patient",
-    number: "III",
-    color: "#2C5C88",
-    accent: "#C9A84C",
-    status: "forthcoming",
-    year: 2027,
-    coverUrl: "/covers/inheritors.jpg",
-    amazonUrl: null,
-    blurb: "What empires leave behind outlasts the men who built them.",
-    synopsis: `SYNOPSIS_PLACEHOLDER`,
-    chapterTitle: "Chapter One",
-    chapter: `CHAPTER_PLACEHOLDER`,
-  },
-
-  // ── STANDALONE ─────────────────────────────────────────────────────────────
-  { id: 14, slug: null, title: "What the Water Keeps",       series: "Standalone",            seriesId: "water",    number: null,  color: "#2E7C8E", status: "forthcoming", year: 2027, blurb: "Some things are hidden for good reason. She found them anyway." },
-
-  // ── THE PRAGUE VARIATIONS ──────────────────────────────────────────────────
-  { id: 15, slug: null, title: "The Longest Silence",        series: "The Prague Variations", seriesId: "prague",   number: "I",   color: "#9C8A6E", status: "forthcoming", year: 2027, blurb: "Prague, 1882. A pianist who abandoned her career on one man's word must learn to trust her own perception." },
-  { id: 16, slug: null, title: "The Beautiful Distance",     series: "The Prague Variations", seriesId: "prague",   number: "II",  color: "#8C7A5E", status: "forthcoming", year: 2027, blurb: "The gap she maintains, aestheticised into a way of life. Until it catches fire." },
-  { id: 17, slug: null, title: "What Remains",               series: "The Prague Variations", seriesId: "prague",   number: "III", color: "#7C6A4E", status: "forthcoming", year: 2027, blurb: "After grief, after pressure, after everything that tests a love built on solid ground." },
-  { id: 18, slug: null, title: "The Trembling Threshold",    series: "The Prague Variations", seriesId: "prague",   number: "IV",  color: "#6C5A3E", status: "forthcoming", year: 2028, blurb: "Always at the door, never through it — the oscillation that defines a life." },
+Somewhere, beneath the city, beneath the river, beneath the stone and the sand and the layered dead, the hum continued.` },
+  { id:2,  slug:"the-red-land",           title:"The Red Land",               series:"The Names Beneath",      seriesId:"names-beneath", number:"II",  genre:"Dark Fantasy",          color:"#B05050", accent:"#C9A84C", status:"available",   year:2026, coverUrl:"/covers/red-land.jpg",             amazonUrl:null, blurb:"Beyond the Black Land lies the Red — chaos, exile, and the god who dwells there willingly.",            synopsis:"SYNOPSIS_PLACEHOLDER", chapterTitle:"Chapter One", chapter:"CHAPTER_PLACEHOLDER" },
+  { id:3,  slug:"the-gathering-field",    title:"The Gathering Field",        series:"The Names Beneath",      seriesId:"names-beneath", number:"III", genre:"Dark Fantasy",          color:"#2A6C3C", accent:"#E05C3A", status:"forthcoming", year:2026, coverUrl:"/covers/gathering-field.jpg",      amazonUrl:null, blurb:"The field where the dead gather has been waiting for her since birth.",                               synopsis:"SYNOPSIS_PLACEHOLDER", chapterTitle:"Chapter One", chapter:"CHAPTER_PLACEHOLDER" },
+  { id:4,  slug:"the-luminous-dark",      title:"The Luminous Dark",          series:"The Names Beneath",      seriesId:"names-beneath", number:"IV",  genre:"Dark Fantasy",          color:"#3C4C5C", accent:"#C9A84C", status:"forthcoming", year:2027, coverUrl:"/covers/luminous-dark.jpg",        amazonUrl:null, blurb:"All names return to the source. All fires return to the flame.",                                    synopsis:"SYNOPSIS_PLACEHOLDER", chapterTitle:"Chapter One", chapter:"CHAPTER_PLACEHOLDER" },
+  { id:5,  slug:null, title:"Before the Carving",      series:"The Carved Wall",       seriesId:"carved-wall",     number:"I",   genre:"Dark Fantasy",          color:"#8A4C3C", status:"forthcoming", year:2026, blurb:"The first mark was not written. It was remembered." },
+  { id:6,  slug:null, title:"The First Mark",          series:"The Carved Wall",       seriesId:"carved-wall",     number:"II",  genre:"Dark Fantasy",          color:"#7A4A3A", status:"forthcoming", year:2027, blurb:"To carve is to choose. To choose is to divide the world." },
+  { id:7,  slug:null, title:"What the Wall Remembers", series:"The Carved Wall",       seriesId:"carved-wall",     number:"III", genre:"Dark Fantasy",          color:"#6A4030", status:"forthcoming", year:2027, blurb:"Walls do not forget. They wait." },
+  { id:8,  slug:null, title:"The Weight of It",        series:"The Borrowed Name",     seriesId:"borrowed-name",   number:"I",   genre:"Dark Fantasy",          color:"#7A5C8A", status:"forthcoming", year:2027, blurb:"The war is over. The names remain. Now comes the harder work." },
+  { id:9,  slug:null, title:"A Name That Fits",        series:"The Borrowed Name",     seriesId:"borrowed-name",   number:"II",  genre:"Dark Fantasy",          color:"#6A4C7A", status:"forthcoming", year:2027, blurb:"Borrowed things never feel entirely yours." },
+  { id:10, slug:null, title:"The Inheritance",         series:"The Borrowed Name",     seriesId:"borrowed-name",   number:"III", genre:"Dark Fantasy",          color:"#5A3C6A", status:"forthcoming", year:2028, blurb:"What you pass on is never only what you intended." },
+  { id:11, slug:"the-patient-empires",    title:"The Patient Empires",        series:"Patient Empires",       seriesId:"patient",        number:"I",   genre:"Geopolitical Thriller", color:"#4C7CA8", accent:"#C9A84C", status:"available",   year:2026, coverUrl:"/covers/patient-empires.jpg",      amazonUrl:null, blurb:"Four operatives. Four governments. One collapse none of them could stop — or wanted to.",              synopsis:"SYNOPSIS_PLACEHOLDER", chapterTitle:"Chapter One", chapter:"CHAPTER_PLACEHOLDER" },
+  { id:12, slug:"the-unresolved-variable",title:"The Unresolved Variable",    series:"Patient Empires",       seriesId:"patient",        number:"II",  genre:"Geopolitical Thriller", color:"#3C6C98", accent:"#C9A84C", status:"forthcoming", year:2026, coverUrl:"/covers/unresolved-variable.jpg",  amazonUrl:null, blurb:"The variable no model predicted has begun to move.",                                                synopsis:"SYNOPSIS_PLACEHOLDER", chapterTitle:"Chapter One", chapter:"CHAPTER_PLACEHOLDER" },
+  { id:13, slug:"the-inheritors",         title:"The Inheritors",             series:"Patient Empires",       seriesId:"patient",        number:"III", genre:"Geopolitical Thriller", color:"#2C5C88", accent:"#C9A84C", status:"forthcoming", year:2027, coverUrl:"/covers/inheritors.jpg",           amazonUrl:null, blurb:"What empires leave behind outlasts the men who built them.",                                          synopsis:"SYNOPSIS_PLACEHOLDER", chapterTitle:"Chapter One", chapter:"CHAPTER_PLACEHOLDER" },
+  { id:14, slug:null, title:"What the Water Keeps",    series:"Standalone",            seriesId:"water",          number:null,  genre:"Psychological Thriller", color:"#2E7C8E", status:"forthcoming", year:2027, blurb:"Some things are hidden for good reason. She found them anyway." },
+  { id:15, slug:null, title:"The Longest Silence",     series:"The Prague Variations", seriesId:"prague",         number:"I",   genre:"Women's Fiction",        color:"#9C8A6E", status:"forthcoming", year:2027, blurb:"Prague, 1882. A pianist who abandoned her career on one man's word must learn to trust her own perception." },
+  { id:16, slug:null, title:"The Beautiful Distance",  series:"The Prague Variations", seriesId:"prague",         number:"II",  genre:"Women's Fiction",        color:"#8C7A5E", status:"forthcoming", year:2027, blurb:"The gap she maintains, aestheticised into a way of life. Until it catches fire." },
+  { id:17, slug:null, title:"What Remains",            series:"The Prague Variations", seriesId:"prague",         number:"III", genre:"Women's Fiction",        color:"#7C6A4E", status:"forthcoming", year:2027, blurb:"After grief, after pressure, after everything that tests a love built on solid ground." },
+  { id:18, slug:null, title:"The Trembling Threshold", series:"The Prague Variations", seriesId:"prague",         number:"IV",  genre:"Women's Fiction",        color:"#6C5A3E", status:"forthcoming", year:2028, blurb:"Always at the door, never through it — the oscillation that defines a life." },
 ];
 
 export const SERIES = [
-  { id: "names-beneath", roman: "I",   title: "The Names Beneath",     sub: "Dark Fantasy · Four Volumes",              count: 4, genre: "Dark Fantasy",          color: "#C9A84C", status: "Books I–II Available",  desc: "In a mythologised Egypt where the old gods never left, four souls carry names that do not belong to them. A sequence about divine inheritance, forbidden knowledge, and the price of claiming your true nature." },
-  { id: "carved-wall",   roman: "II",  title: "The Carved Wall",       sub: "Prequel Sequence · Three Volumes",         count: 3, genre: "Dark Fantasy",          color: "#A84C4C", status: "Coming 2026–2027",      desc: "Before the Names were given, the Wall was raised. Three volumes tracing the divine compact that shaped the world of The Names Beneath — told from the perspective of those who built it." },
-  { id: "borrowed-name", roman: "III", title: "The Borrowed Name",     sub: "Sequel Sequence · Three Volumes",          count: 3, genre: "Dark Fantasy",          color: "#7A5C8A", status: "Coming 2027–2028",      desc: "After the final reckoning, those who survived must live inside the names they earned. Three volumes of consequence, legacy, and the long work of becoming what you chose." },
-  { id: "patient",       roman: "IV",  title: "The Patient Empires",   sub: "Geopolitical Thriller · Trilogy",          count: 3, genre: "Geopolitical Thriller",  color: "#4C7CA8", status: "Book I Available",      desc: "Near-future geopolitical collapse seen through four intelligence operatives whose loyalties span continents and ideologies. A fiction rooted in real frameworks of power and failure." },
-  { id: "water",         roman: "V",   title: "What the Water Keeps",  sub: "Standalone Psychological Thriller",        count: 1, genre: "Psychological Thriller", color: "#2E7C8E", status: "Coming 2027",           desc: "A woman returns to the village where her sister drowned fifteen years ago. What the water kept, it does not easily release. A novel of memory, guilt, and the things we bury." },
-  { id: "prague",        roman: "VI",  title: "The Prague Variations", sub: "Historical Women's Fiction · Four Volumes", count: 4, genre: "Women's Fiction",       color: "#9C8A6E", status: "Coming 2027–2028",      desc: "Four women in four eras of Prague — the Jewish Quarter at century's turn, the Occupation, the Velvet Revolution, and after — whose stories echo across decades in ways none of them could have predicted." },
+  { id:"names-beneath", roman:"I",   title:"The Names Beneath",     sub:"Dark Fantasy · Four Volumes",              count:4, genre:"Dark Fantasy",          color:"#C9A84C", status:"Books I & II Available",  desc:"In a mythologised Egypt where the old gods never left, four souls carry names that do not belong to them. Divine inheritance, forbidden knowledge, and the price of claiming your true nature." },
+  { id:"carved-wall",   roman:"II",  title:"The Carved Wall",       sub:"Prequel Sequence · Three Volumes",         count:3, genre:"Dark Fantasy",          color:"#A84C4C", status:"Coming 2026–2027",         desc:"Before the Names were given, the Wall was raised. Three volumes tracing the divine compact that shaped the world of The Names Beneath." },
+  { id:"borrowed-name", roman:"III", title:"The Borrowed Name",     sub:"Sequel Sequence · Three Volumes",          count:3, genre:"Dark Fantasy",          color:"#7A5C8A", status:"Coming 2027–2028",         desc:"After the final reckoning, those who survived must live inside the names they earned. Three volumes of consequence, legacy, and becoming." },
+  { id:"patient",       roman:"IV",  title:"The Patient Empires",   sub:"Geopolitical Thriller · Trilogy",          count:3, genre:"Geopolitical Thriller",  color:"#4C7CA8", status:"Book I Available",         desc:"Near-future geopolitical collapse seen through four intelligence operatives whose loyalties span continents and ideologies." },
+  { id:"water",         roman:"V",   title:"What the Water Keeps",  sub:"Standalone Psychological Thriller",        count:1, genre:"Psychological Thriller", color:"#2E7C8E", status:"Coming 2027",              desc:"A woman returns to the village where her sister drowned fifteen years ago. A novel of memory, guilt, and the things we bury." },
+  { id:"prague",        roman:"VI",  title:"The Prague Variations", sub:"Historical Women's Fiction · Four Volumes", count:4, genre:"Women's Fiction",       color:"#9C8A6E", status:"Coming 2027–2028",         desc:"Four women in four eras of Prague whose stories echo across decades in ways none of them could have predicted." },
 ];
 
-export const FILTERS = ["All", "Dark Fantasy", "Geopolitical Thriller", "Psychological Thriller", "Women's Fiction"];
-
-export const BOOKS_WITH_PAGES = BOOKS.filter(b => b.slug !== null && b.slug !== undefined);
+export const FILTERS = ["All","Dark Fantasy","Geopolitical Thriller","Psychological Thriller","Women's Fiction"];
+export const BOOKS_WITH_PAGES = BOOKS.filter(b => b.slug != null);
