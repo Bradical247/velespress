@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
 const THRONE_COVER = "/covers/throne-of-ashes.jpg";
 const RED_LAND_COVER = "/covers/red-land.jpg";
@@ -173,11 +174,13 @@ function FeaturedRelease(){
 
 function BookCard({book,vis,delay}){
   const[hov,setHov]=useState(false);
-  return(
-    <div style={{...fx(vis,delay),cursor:"pointer"}} onMouseEnter={()=>setHov(true)} onMouseLeave={()=>setHov(false)}>
+  const hasPage = book.slug != null;
+  const inner = (
+    <>
       <div style={{transform:hov?"translateY(-9px)":"translateY(0)",transition:"transform .45s cubic-bezier(.16,1,.3,1)",position:"relative"}}>
         <Cover book={book} w={148} ht={237}/>
         {hov&&book.blurb&&<div style={{position:"absolute",bottom:0,left:0,right:0,padding:"24px 8px 8px",background:`linear-gradient(to top,#0D0F14 ${book.coverUrl?"80%":"55%"},transparent)`,animation:"fadeIn .25s ease"}}><p style={{fontFamily:"'Cormorant Garamond',serif",fontSize:11,color:"rgba(237,232,223,.6)",fontStyle:"italic",lineHeight:1.5,textAlign:"center"}}>{book.blurb}</p></div>}
+        {hasPage&&hov&&<div style={{position:"absolute",top:8,left:0,right:0,display:"flex",justifyContent:"center"}}><div style={{fontFamily:"'Cinzel',serif",fontSize:7.5,letterSpacing:3,textTransform:"uppercase",color:"#C9A84C",background:"rgba(13,15,20,.85)",padding:"4px 10px",animation:"fadeIn .2s ease"}}>View Book →</div></div>}
       </div>
       <div style={{marginTop:12,paddingLeft:2}}>
         <div style={{fontFamily:"'Cinzel',serif",fontSize:9.5,fontWeight:600,color:hov?"#C9A84C":"rgba(237,232,223,.7)",letterSpacing:1.5,textTransform:"uppercase",lineHeight:1.4,marginBottom:4,transition:"color .3s"}}>{book.title}</div>
@@ -187,8 +190,11 @@ function BookCard({book,vis,delay}){
           <span style={{fontFamily:"'Cinzel',serif",fontSize:7.5,letterSpacing:2,textTransform:"uppercase",color:book.status==="available"?"rgba(201,168,76,.56)":"rgba(237,232,223,.18)"}}>{book.status==="available"?`Available · ${book.year}`:`Forthcoming · ${book.year}`}</span>
         </div>
       </div>
-    </div>
+    </>
   );
+  return hasPage
+    ? <Link to={`/books/${book.slug}`} style={{...fx(vis,delay),display:"block",textDecoration:"none"}} onMouseEnter={()=>setHov(true)} onMouseLeave={()=>setHov(false)}>{inner}</Link>
+    : <div style={{...fx(vis,delay),cursor:"default"}} onMouseEnter={()=>setHov(true)} onMouseLeave={()=>setHov(false)}>{inner}</div>;
 }
 
 function CatalogueGrid(){

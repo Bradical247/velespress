@@ -1,0 +1,168 @@
+// ─── BOOK DATA ────────────────────────────────────────────────────────────────
+// This is the single source of truth for all book data across the site.
+// Add synopsis and chapter text here when available.
+
+export const BOOKS = [
+  // ── THE NAMES BENEATH ──────────────────────────────────────────────────────
+  {
+    id: 1,
+    slug: "throne-of-ashes",
+    title: "Throne of Ashes",
+    series: "The Names Beneath",
+    seriesId: "names-beneath",
+    number: "I",
+    color: "#C9A84C",
+    accent: "#E05C3A",
+    status: "available",
+    year: 2026,
+    coverUrl: "/covers/throne-of-ashes.jpg",
+    amazonUrl: "https://www.amazon.com/dp/B0G2GKK43H",
+    blurb: "The first god-name has been spoken. Now the heir must learn what it costs to carry it.",
+    synopsis: `SYNOPSIS_PLACEHOLDER`,
+    chapterTitle: "Chapter One",
+    chapter: `CHAPTER_PLACEHOLDER`,
+  },
+  {
+    id: 2,
+    slug: "the-red-land",
+    title: "The Red Land",
+    series: "The Names Beneath",
+    seriesId: "names-beneath",
+    number: "II",
+    color: "#B05050",
+    accent: "#C9A84C",
+    status: "available",
+    year: 2026,
+    coverUrl: "/covers/red-land.jpg",
+    amazonUrl: null,
+    blurb: "Beyond the Black Land lies the Red — chaos, exile, and the god who dwells there willingly.",
+    synopsis: `SYNOPSIS_PLACEHOLDER`,
+    chapterTitle: "Chapter One",
+    chapter: `CHAPTER_PLACEHOLDER`,
+  },
+  {
+    id: 3,
+    slug: "the-gathering-field",
+    title: "The Gathering Field",
+    series: "The Names Beneath",
+    seriesId: "names-beneath",
+    number: "III",
+    color: "#2A6C3C",
+    accent: "#E05C3A",
+    status: "forthcoming",
+    year: 2026,
+    coverUrl: "/covers/gathering-field.jpg",
+    amazonUrl: null,
+    blurb: "The field where the dead gather has been waiting for her since birth.",
+    synopsis: `SYNOPSIS_PLACEHOLDER`,
+    chapterTitle: "Chapter One",
+    chapter: `CHAPTER_PLACEHOLDER`,
+  },
+  {
+    id: 4,
+    slug: "the-luminous-dark",
+    title: "The Luminous Dark",
+    series: "The Names Beneath",
+    seriesId: "names-beneath",
+    number: "IV",
+    color: "#3C4C5C",
+    accent: "#C9A84C",
+    status: "forthcoming",
+    year: 2027,
+    coverUrl: "/covers/luminous-dark.jpg",
+    amazonUrl: null,
+    blurb: "All names return to the source. All fires return to the flame.",
+    synopsis: `SYNOPSIS_PLACEHOLDER`,
+    chapterTitle: "Chapter One",
+    chapter: `CHAPTER_PLACEHOLDER`,
+  },
+
+  // ── THE CARVED WALL ────────────────────────────────────────────────────────
+  { id: 5,  slug: null, title: "Before the Carving",      series: "The Carved Wall",       seriesId: "carved-wall",     number: "I",   color: "#8A4C3C", status: "forthcoming", year: 2026, blurb: "The first mark was not written. It was remembered." },
+  { id: 6,  slug: null, title: "The First Mark",          series: "The Carved Wall",       seriesId: "carved-wall",     number: "II",  color: "#7A4A3A", status: "forthcoming", year: 2027, blurb: "To carve is to choose. To choose is to divide the world." },
+  { id: 7,  slug: null, title: "What the Wall Remembers", series: "The Carved Wall",       seriesId: "carved-wall",     number: "III", color: "#6A4030", status: "forthcoming", year: 2027, blurb: "Walls do not forget. They wait." },
+
+  // ── THE BORROWED NAME ──────────────────────────────────────────────────────
+  { id: 8,  slug: null, title: "The Weight of It",        series: "The Borrowed Name",     seriesId: "borrowed-name",   number: "I",   color: "#7A5C8A", status: "forthcoming", year: 2027, blurb: "The war is over. The names remain. Now comes the harder work." },
+  { id: 9,  slug: null, title: "A Name That Fits",        series: "The Borrowed Name",     seriesId: "borrowed-name",   number: "II",  color: "#6A4C7A", status: "forthcoming", year: 2027, blurb: "Borrowed things never feel entirely yours." },
+  { id: 10, slug: null, title: "The Inheritance",         series: "The Borrowed Name",     seriesId: "borrowed-name",   number: "III", color: "#5A3C6A", status: "forthcoming", year: 2028, blurb: "What you pass on is never only what you intended." },
+
+  // ── THE PATIENT EMPIRES ────────────────────────────────────────────────────
+  {
+    id: 11,
+    slug: "the-patient-empires",
+    title: "The Patient Empires",
+    series: "Patient Empires",
+    seriesId: "patient",
+    number: "I",
+    color: "#4C7CA8",
+    accent: "#C9A84C",
+    status: "available",
+    year: 2026,
+    coverUrl: "/covers/patient-empires.jpg",
+    amazonUrl: null,
+    blurb: "Four operatives. Four governments. One collapse none of them could stop — or wanted to.",
+    synopsis: `SYNOPSIS_PLACEHOLDER`,
+    chapterTitle: "Chapter One",
+    chapter: `CHAPTER_PLACEHOLDER`,
+  },
+  {
+    id: 12,
+    slug: "the-unresolved-variable",
+    title: "The Unresolved Variable",
+    series: "Patient Empires",
+    seriesId: "patient",
+    number: "II",
+    color: "#3C6C98",
+    accent: "#C9A84C",
+    status: "forthcoming",
+    year: 2026,
+    coverUrl: "/covers/unresolved-variable.jpg",
+    amazonUrl: null,
+    blurb: "The variable no model predicted has begun to move.",
+    synopsis: `SYNOPSIS_PLACEHOLDER`,
+    chapterTitle: "Chapter One",
+    chapter: `CHAPTER_PLACEHOLDER`,
+  },
+  {
+    id: 13,
+    slug: "the-inheritors",
+    title: "The Inheritors",
+    series: "Patient Empires",
+    seriesId: "patient",
+    number: "III",
+    color: "#2C5C88",
+    accent: "#C9A84C",
+    status: "forthcoming",
+    year: 2027,
+    coverUrl: "/covers/inheritors.jpg",
+    amazonUrl: null,
+    blurb: "What empires leave behind outlasts the men who built them.",
+    synopsis: `SYNOPSIS_PLACEHOLDER`,
+    chapterTitle: "Chapter One",
+    chapter: `CHAPTER_PLACEHOLDER`,
+  },
+
+  // ── STANDALONE ─────────────────────────────────────────────────────────────
+  { id: 14, slug: null, title: "What the Water Keeps",       series: "Standalone",            seriesId: "water",           number: null,  color: "#2E7C8E", status: "forthcoming", year: 2027, blurb: "Some things are hidden for good reason. She found them anyway." },
+
+  // ── THE PRAGUE VARIATIONS ──────────────────────────────────────────────────
+  { id: 15, slug: null, title: "The Longest Silence",        series: "The Prague Variations", seriesId: "prague",          number: "I",   color: "#9C8A6E", status: "forthcoming", year: 2027, blurb: "Prague, 1882. A pianist who abandoned her career on one man's word must learn to trust her own perception." },
+  { id: 16, slug: null, title: "The Beautiful Distance",     series: "The Prague Variations", seriesId: "prague",          number: "II",  color: "#8C7A5E", status: "forthcoming", year: 2027, blurb: "The gap she maintains, aestheticised into a way of life. Until it catches fire." },
+  { id: 17, slug: null, title: "What Remains",               series: "The Prague Variations", seriesId: "prague",          number: "III", color: "#7C6A4E", status: "forthcoming", year: 2027, blurb: "After grief, after pressure, after everything that tests a love built on solid ground." },
+  { id: 18, slug: null, title: "The Trembling Threshold",    series: "The Prague Variations", seriesId: "prague",          number: "IV",  color: "#6C5A3E", status: "forthcoming", year: 2028, blurb: "Always at the door, never through it — the oscillation that defines a life." },
+];
+
+export const SERIES = [
+  { id: "names-beneath", roman: "I",   title: "The Names Beneath",     sub: "Dark Fantasy · Four Volumes",             count: 4, genre: "Dark Fantasy",          color: "#C9A84C", status: "Books I–II Available",  desc: "In a mythologised Egypt where the old gods never left, four souls carry names that do not belong to them. A sequence about divine inheritance, forbidden knowledge, and the price of claiming your true nature." },
+  { id: "carved-wall",   roman: "II",  title: "The Carved Wall",       sub: "Prequel Sequence · Three Volumes",        count: 3, genre: "Dark Fantasy",          color: "#A84C4C", status: "Coming 2026–2027",      desc: "Before the Names were given, the Wall was raised. Three volumes tracing the divine compact that shaped the world of The Names Beneath — told from the perspective of those who built it." },
+  { id: "borrowed-name", roman: "III", title: "The Borrowed Name",     sub: "Sequel Sequence · Three Volumes",         count: 3, genre: "Dark Fantasy",          color: "#7A5C8A", status: "Coming 2027–2028",      desc: "After the final reckoning, those who survived must live inside the names they earned. Three volumes of consequence, legacy, and the long work of becoming what you chose." },
+  { id: "patient",       roman: "IV",  title: "The Patient Empires",   sub: "Geopolitical Thriller · Trilogy",         count: 3, genre: "Geopolitical Thriller",  color: "#4C7CA8", status: "Book I Available",      desc: "Near-future geopolitical collapse seen through four intelligence operatives whose loyalties span continents and ideologies. A fiction rooted in real frameworks of power and failure." },
+  { id: "water",         roman: "V",   title: "What the Water Keeps",  sub: "Standalone Psychological Thriller",       count: 1, genre: "Psychological Thriller", color: "#2E7C8E", status: "Coming 2027",           desc: "A woman returns to the village where her sister drowned fifteen years ago. What the water kept, it does not easily release. A novel of memory, guilt, and the things we bury." },
+  { id: "prague",        roman: "VI",  title: "The Prague Variations", sub: "Historical Women's Fiction · Four Volumes", count: 4, genre: "Women's Fiction",       color: "#9C8A6E", status: "Coming 2027–2028",      desc: "Four women in four eras of Prague — the Jewish Quarter at century's turn, the Occupation, the Velvet Revolution, and after — whose stories echo across decades in ways none of them could have predicted." },
+];
+
+export const FILTERS = ["All", "Dark Fantasy", "Geopolitical Thriller", "Psychological Thriller", "Women's Fiction"];
+
+// Books that have their own detail page
+export const BOOKS_WITH_PAGES = BOOKS.filter(b => b.slug !== null && b.slug !== undefined);
