@@ -20,19 +20,19 @@ const SERIES = [
 ];
 
 const BOOKS = [
-  { id:1,  slug:"throne-of-ashes", title:"Throne of Ashes",           sid:"names-beneath", series:"The Names Beneath",      num:"I",   color:"#C9A84C", status:"available",   year:2026, coverUrl: THRONE_COVER, blurb:"The first god-name has been spoken. Now the heir must learn what it costs to carry it." },
-  { id:2,  slug:"the-red-land", title:"The Red Land",               sid:"names-beneath", series:"The Names Beneath",      num:"II",  color:"#B05050", status:"available",   year:2026, coverUrl:RED_LAND_COVER, blurb:"Beyond the Black Land lies the Red — chaos, exile, and the god who dwells there willingly." },
-  { id:3,  slug:"the-gathering-field", title:"The Gathering Field",         sid:"names-beneath", series:"The Names Beneath",      num:"III", color:"#2A6C3C", status:"forthcoming", year:2026, coverUrl:GATHERING_FIELD_COVER, blurb:"The field where the dead gather has been waiting for her since birth." },
-  { id:4,  slug:"the-luminous-dark", title:"The Luminous Dark",           sid:"names-beneath", series:"The Names Beneath",      num:"IV",  color:"#3C4C5C", status:"forthcoming", year:2027, coverUrl:LUMINOUS_DARK_COVER, blurb:"All names return to the source. All fires return to the flame." },
+  { id:1,  title:"Throne of Ashes",           sid:"names-beneath", series:"The Names Beneath",      num:"I",   color:"#C9A84C", status:"available",   year:2026, coverUrl: THRONE_COVER, blurb:"The first god-name has been spoken. Now the heir must learn what it costs to carry it." },
+  { id:2,  title:"The Red Land",               sid:"names-beneath", series:"The Names Beneath",      num:"II",  color:"#B05050", status:"available",   year:2026, coverUrl:RED_LAND_COVER, blurb:"Beyond the Black Land lies the Red — chaos, exile, and the god who dwells there willingly." },
+  { id:3,  title:"The Gathering Field",         sid:"names-beneath", series:"The Names Beneath",      num:"III", color:"#2A6C3C", status:"forthcoming", year:2026, coverUrl:GATHERING_FIELD_COVER, blurb:"The field where the dead gather has been waiting for her since birth." },
+  { id:4,  title:"The Luminous Dark",           sid:"names-beneath", series:"The Names Beneath",      num:"IV",  color:"#3C4C5C", status:"forthcoming", year:2027, coverUrl:LUMINOUS_DARK_COVER, blurb:"All names return to the source. All fires return to the flame." },
   { id:5,  title:"Before the Carving",         sid:"carved-wall",   series:"The Carved Wall",        num:"I",   color:"#8A4C3C", status:"forthcoming", year:2026, blurb:"The first mark was not written. It was remembered." },
   { id:6,  title:"The First Mark",             sid:"carved-wall",   series:"The Carved Wall",        num:"II",  color:"#7A4A3A", status:"forthcoming", year:2027, blurb:"To carve is to choose. To choose is to divide the world." },
   { id:7,  title:"What the Wall Remembers",    sid:"carved-wall",   series:"The Carved Wall",        num:"III", color:"#6A4030", status:"forthcoming", year:2027, blurb:"Walls do not forget. They wait." },
   { id:8,  title:"The Weight of It",           sid:"borrowed-name", series:"The Borrowed Name",      num:"I",   color:"#7A5C8A", status:"forthcoming", year:2027, blurb:"The war is over. The names remain. Now comes the harder work." },
   { id:9,  title:"A Name That Fits",           sid:"borrowed-name", series:"The Borrowed Name",      num:"II",  color:"#6A4C7A", status:"forthcoming", year:2027, blurb:"Borrowed things never feel entirely yours." },
   { id:10, title:"The Inheritance",            sid:"borrowed-name", series:"The Borrowed Name",      num:"III", color:"#5A3C6A", status:"forthcoming", year:2028, blurb:"What you pass on is never only what you intended." },
-  { id:11, slug:"the-patient-empires", title:"The Patient Empires",        sid:"patient",       series:"Patient Empires",        num:"I",   color:"#4C7CA8", status:"available",   year:2026, coverUrl:PATIENT_EMPIRES_COVER, blurb:"Four operatives. Four governments. One collapse none of them could stop — or wanted to." },
-  { id:12, slug:"the-unresolved-variable", title:"The Unresolved Variable",    sid:"patient",       series:"Patient Empires",        num:"II",  color:"#3C6C98", status:"forthcoming", year:2026, coverUrl:UNRESOLVED_VARIABLE_COVER, blurb:"The variable no model predicted has begun to move." },
-  { id:13, slug:"the-inheritors", title:"The Inheritors",             sid:"patient",       series:"Patient Empires",        num:"III", color:"#2C5C88", status:"forthcoming", year:2027, coverUrl:INHERITORS_COVER, blurb:"What empires leave behind outlasts the men who built them." },
+  { id:11, title:"The Patient Empires",        sid:"patient",       series:"Patient Empires",        num:"I",   color:"#4C7CA8", status:"available",   year:2026, coverUrl:PATIENT_EMPIRES_COVER, blurb:"Four operatives. Four governments. One collapse none of them could stop — or wanted to." },
+  { id:12, title:"The Unresolved Variable",    sid:"patient",       series:"Patient Empires",        num:"II",  color:"#3C6C98", status:"forthcoming", year:2026, coverUrl:UNRESOLVED_VARIABLE_COVER, blurb:"The variable no model predicted has begun to move." },
+  { id:13, title:"The Inheritors",             sid:"patient",       series:"Patient Empires",        num:"III", color:"#2C5C88", status:"forthcoming", year:2027, coverUrl:INHERITORS_COVER, blurb:"What empires leave behind outlasts the men who built them." },
   { id:14, title:"What the Water Keeps",       sid:"water",         series:"Standalone",             num:null,  color:"#2E7C8E", status:"forthcoming", year:2027, blurb:"Some things are hidden for good reason. She found them anyway." },
   { id:15, title:"The Longest Silence",        sid:"prague",        series:"The Prague Variations",  num:"I",   color:"#9C8A6E", status:"forthcoming", year:2027, blurb:"Prague, 1882. A pianist who abandoned her career on one man's word must learn to trust her own perception." },
   { id:16, title:"The Beautiful Distance",     sid:"prague",        series:"The Prague Variations",  num:"II",  color:"#8C7A5E", status:"forthcoming", year:2027, blurb:"The gap she maintains, aestheticised into a way of life. Until it catches fire." },
@@ -239,7 +239,14 @@ function SeriesRow({s,idx}){
             <div style={{width:20,height:1,background:`${s.color}38`}}/>
             <div style={{padding:"3px 9px",border:`1px solid ${s.color}26`,fontFamily:"'Cinzel',serif",fontSize:7.5,letterSpacing:3,textTransform:"uppercase",color:`${s.color}78`}}>{s.genre}</div>
           </div>
-          <h3 style={{...fx(vis,.1,even?"left":"right"),fontFamily:"'Cinzel',serif",fontSize:"clamp(22px,2.6vw,40px)",fontWeight:700,color:"#EDE8DF",letterSpacing:2,textTransform:"uppercase",lineHeight:1.1,marginBottom:8}}>{s.title}</h3>
+          {(() => {
+            const firstBook = BOOKS.find(b => b.sid === s.id && b.slug);
+            return firstBook
+              ? <Link to={`/books/${firstBook.slug}`} style={{textDecoration:"none",display:"block"}}>
+                  <h3 style={{...fx(vis,.1,even?"left":"right"),fontFamily:"'Cinzel',serif",fontSize:"clamp(22px,2.6vw,40px)",fontWeight:700,color:"#EDE8DF",letterSpacing:2,textTransform:"uppercase",lineHeight:1.1,marginBottom:8,transition:"color .3s"}} onMouseEnter={e=>e.target.style.color="#C9A84C"} onMouseLeave={e=>e.target.style.color="#EDE8DF"}>{s.title} →</h3>
+                </Link>
+              : <h3 style={{...fx(vis,.1,even?"left":"right"),fontFamily:"'Cinzel',serif",fontSize:"clamp(22px,2.6vw,40px)",fontWeight:700,color:"#EDE8DF",letterSpacing:2,textTransform:"uppercase",lineHeight:1.1,marginBottom:8}}>{s.title}</h3>;
+          })()}
           <div style={{...fx(vis,.16,even?"left":"right"),fontFamily:"'Cormorant Garamond',serif",fontSize:14,color:"rgba(237,232,223,.32)",fontStyle:"italic",letterSpacing:1,marginBottom:24}}>{s.sub}</div>
           <div style={{...fx(vis,.07,even?"left":"right"),width:40,height:1,background:`linear-gradient(to right,${s.color}58,transparent)`,marginBottom:24}}/>
           <p style={{...fx(vis,.2,even?"left":"right"),fontFamily:"'Cormorant Garamond',serif",fontSize:17,lineHeight:1.82,color:"rgba(237,232,223,.48)",maxWidth:480,marginBottom:28}}>{s.desc}</p>
@@ -254,9 +261,13 @@ function SeriesRow({s,idx}){
         </div>
         <div style={{...fx(vis,.06,even?"right":"left"),flexShrink:0,display:"flex",alignItems:"flex-end",gap:10}}>
           {sbooks.map((book,bi)=>(
-            <div key={book.id} style={{transform:`translateY(${bi===0?0:bi===1?-14:-7}px) rotate(${bi===0?-1.8:bi===1?1.2:2.8}deg)`,opacity:1-bi*.2}}>
-              <Cover book={book} w={bi===0?152:122} ht={bi===0?243:195}/>
-            </div>
+            book.slug
+              ? <Link key={book.id} to={`/books/${book.slug}`} style={{display:"block",textDecoration:"none",transform:`translateY(${bi===0?0:bi===1?-14:-7}px) rotate(${bi===0?-1.8:bi===1?1.2:2.8}deg)`,opacity:1-bi*.2,transition:"opacity .3s, transform .3s"}} onMouseEnter={e=>{e.currentTarget.style.opacity="1";e.currentTarget.style.transform=`translateY(${bi===0?-6:bi===1?-20:-13}px) rotate(${bi===0?-1.8:bi===1?1.2:2.8}deg)`;}} onMouseLeave={e=>{e.currentTarget.style.opacity=String(1-bi*.2);e.currentTarget.style.transform=`translateY(${bi===0?0:bi===1?-14:-7}px) rotate(${bi===0?-1.8:bi===1?1.2:2.8}deg)`;}}>
+                  <Cover book={book} w={bi===0?152:122} ht={bi===0?243:195}/>
+                </Link>
+              : <div key={book.id} style={{transform:`translateY(${bi===0?0:bi===1?-14:-7}px) rotate(${bi===0?-1.8:bi===1?1.2:2.8}deg)`,opacity:1-bi*.2}}>
+                  <Cover book={book} w={bi===0?152:122} ht={bi===0?243:195}/>
+                </div>
           ))}
         </div>
       </div>
@@ -390,7 +401,12 @@ function Footer(){
             <div style={{display:"flex",flexDirection:"column",gap:12}}>
               {SERIES.map(s=>(
                 <div key={s.id}>
-                  <div style={{fontFamily:"'Cinzel',serif",fontSize:9.5,letterSpacing:1.5,color:"rgba(237,232,223,.52)",textTransform:"uppercase",marginBottom:2,cursor:"pointer",transition:"color .3s"}} onMouseEnter={e=>e.target.style.color="#C9A84C"} onMouseLeave={e=>e.target.style.color="rgba(237,232,223,.52)"}>{s.title}</div>
+                  {(() => {
+                    const firstBook = BOOKS.find(b => b.sid === s.id && b.slug);
+                    return firstBook
+                      ? <Link to={`/books/${firstBook.slug}`} style={{textDecoration:"none",display:"block",fontFamily:"'Cinzel',serif",fontSize:9.5,letterSpacing:1.5,color:"rgba(237,232,223,.52)",textTransform:"uppercase",marginBottom:2,transition:"color .3s"}} onMouseEnter={e=>e.target.style.color="#C9A84C"} onMouseLeave={e=>e.target.style.color="rgba(237,232,223,.52)"}>{s.title}</Link>
+                      : <div style={{fontFamily:"'Cinzel',serif",fontSize:9.5,letterSpacing:1.5,color:"rgba(237,232,223,.52)",textTransform:"uppercase",marginBottom:2}}>{s.title}</div>;
+                  })()}
                   <div style={{fontFamily:"'Cormorant Garamond',serif",fontSize:12,color:"rgba(237,232,223,.2)",fontStyle:"italic"}}>{s.sub}</div>
                 </div>
               ))}
