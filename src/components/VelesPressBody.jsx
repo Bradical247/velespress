@@ -147,12 +147,12 @@ function FeaturedRelease(){
           <p style={{...fx(vis,.32),fontFamily:"'Cormorant Garamond',serif",fontSize:20,lineHeight:1.65,color:"rgba(237,232,223,.7)",fontStyle:"italic",maxWidth:480,marginBottom:16}}>"The first god-name has been spoken. Now the heir must learn what it costs to carry it."</p>
           <p style={{...fx(vis,.38),fontFamily:"'Cormorant Garamond',serif",fontSize:17,lineHeight:1.85,color:"rgba(237,232,223,.4)",maxWidth:460,marginBottom:40}}>In a mythologised Egypt where the old gods never left, a young heir discovers that names are not merely words — they are debts, weapons, and living things that devour those who speak them unprepared.</p>
           <div style={{...fx(vis,.45),display:"flex",gap:12,alignItems:"center",flexWrap:"wrap"}}>
-            <button className="cta-btn"><span>Order on Amazon</span><span style={{fontSize:12}}>→</span></button>
+            <a href="https://www.amazon.com/dp/B0G2GKK43H" target="_blank" rel="noopener noreferrer" className="cta-btn"><span>Order on Amazon</span><span style={{fontSize:12}}>→</span></a>
             <button className="cta-btn-2"><span>Read First Chapter</span></button>
           </div>
           <div style={{...fx(vis,.55),marginTop:36,display:"flex",gap:24,paddingTop:24,borderTop:"1px solid rgba(201,168,76,.07)",flexWrap:"wrap"}}>
-            {["ARC Reviews Open","Goodreads · Add to Shelf","Dark Fantasy · 2026"].map((t,i)=>(
-              <div key={i} style={{fontFamily:"'Cormorant Garamond',serif",fontSize:13,color:"rgba(237,232,223,.25)",fontStyle:"italic"}}>{t}</div>
+            {[{label:"ARC Reviews Open",href:"mailto:press@velespress.com?subject=ARC Request"},{label:"Goodreads · Add to Shelf",href:"https://www.goodreads.com/search?q=throne+of+ashes+bachman"},{label:"Dark Fantasy · 2026",href:null}].map(({label,href},i)=>(
+              href ? <a key={i} href={href} target="_blank" rel="noopener noreferrer" style={{fontFamily:"'Cormorant Garamond',serif",fontSize:13,color:"rgba(237,232,223,.35)",fontStyle:"italic",textDecoration:"none",transition:"color .3s"}} onMouseEnter={e=>e.target.style.color="#C9A84C"} onMouseLeave={e=>e.target.style.color="rgba(237,232,223,.35)"}>{label}</a> : <div key={i} style={{fontFamily:"'Cormorant Garamond',serif",fontSize:13,color:"rgba(237,232,223,.25)",fontStyle:"italic"}}>{label}</div>
             ))}
           </div>
         </div>
@@ -401,8 +401,8 @@ function Footer(){
           <div style={fx(vis,.2)}>
             <div style={{fontFamily:"'Cinzel',serif",fontSize:8,letterSpacing:5,color:"rgba(201,168,76,.48)",textTransform:"uppercase",marginBottom:22}}>Contact</div>
             <div style={{display:"flex",flexDirection:"column",gap:12}}>
-              {["press@velespress.com","submissions@velespress.com","Instagram","Goodreads","Amazon","@conradbachman"].map(l=>(
-                <div key={l} style={{fontFamily:"'Cormorant Garamond',serif",fontSize:13.5,color:"rgba(237,232,223,.32)",cursor:"pointer",transition:"color .3s"}} onMouseEnter={e=>e.target.style.color="#C9A84C"} onMouseLeave={e=>e.target.style.color="rgba(237,232,223,.32)"}>{l}</div>
+              {[{label:"press@velespress.com",href:"mailto:press@velespress.com"},{label:"submissions@velespress.com",href:"mailto:submissions@velespress.com"},{label:"Instagram",href:"https://www.instagram.com/conradbachman"},{label:"Goodreads",href:"https://www.goodreads.com/search?q=conrad+bachman"},{label:"Amazon",href:"https://www.amazon.com/dp/B0G2GKK43H"},{label:"@conradbachman",href:"https://www.instagram.com/conradbachman"},].map(({label,href})=>(
+                <a key={label} href={href} target="_blank" rel="noopener noreferrer" style={{fontFamily:"'Cormorant Garamond',serif",fontSize:13.5,color:"rgba(237,232,223,.32)",cursor:"pointer",transition:"color .3s",textDecoration:"none",display:"block"}} onMouseEnter={e=>e.target.style.color="#C9A84C"} onMouseLeave={e=>e.target.style.color="rgba(237,232,223,.32)"}>{label}</a>
               ))}
             </div>
           </div>
