@@ -8,6 +8,7 @@ const books = [
     color: "#C9A84C",
     accent: "#E05C3A",
     year: "2026",
+    coverUrl: "/covers/throne-of-ashes.jpg",
   },
   {
     title: "The Red Land",
@@ -16,14 +17,16 @@ const books = [
     color: "#A84C4C",
     accent: "#C9A84C",
     year: "2026",
+    coverUrl: "/covers/red-land.jpg",
   },
   {
     title: "The Patient Empires",
-    series: "Standalone Trilogy — I",
+    series: "Patient Empires — I",
     genre: "Geopolitical Thriller",
     color: "#4C7CA8",
     accent: "#C9A84C",
     year: "2026",
+    coverUrl: "/covers/patient-empires.jpg",
   },
 ];
 
@@ -556,7 +559,7 @@ export default function VelesPressHero() {
             <div style={{
               width: 280,
               height: 420,
-              background: `linear-gradient(135deg, #1C2030 0%, #0D0F14 40%, ${book.color}22 100%)`,
+              background: book.coverUrl ? "#0D0F14" : `linear-gradient(135deg, #1C2030 0%, #0D0F14 40%, ${book.color}22 100%)`,
               border: `1px solid ${book.color}44`,
               position: "relative",
               overflow: "hidden",
@@ -567,82 +570,100 @@ export default function VelesPressHero() {
               `,
               animation: "float 6s ease-in-out infinite",
             }}>
-              {/* Inner decorative elements */}
-              <div style={{
+              {/* Real cover image */}
+              {book.coverUrl && (
+                <img
+                  src={book.coverUrl}
+                  alt={book.title}
+                  style={{
+                    position: "absolute",
+                    inset: 0,
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                    objectPosition: "center top",
+                    display: "block",
+                  }}
+                />
+              )}
+              {/* Inner decorative elements — only shown without real cover */}
+              {!book.coverUrl && <div style={{
                 position: "absolute",
                 top: 24,
                 left: 24,
                 right: 24,
                 height: 1,
                 background: `linear-gradient(to right, transparent, ${book.color}60, transparent)`,
-              }} />
-              <div style={{
+              }} />}
+              {!book.coverUrl && <div style={{
                 position: "absolute",
                 bottom: 24,
                 left: 24,
                 right: 24,
                 height: 1,
                 background: `linear-gradient(to right, transparent, ${book.color}60, transparent)`,
-              }} />
+              }} />}
 
-              {/* Central ornament */}
-              <div style={{
-                position: "absolute",
-                top: "50%",
-                left: "50%",
-                transform: "translate(-50%, -60%)",
-                width: 120,
-                height: 120,
-                border: `1px solid ${book.color}30`,
-                borderRadius: "50%",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}>
-                <div style={{
-                  width: 80,
-                  height: 80,
-                  border: `1px solid ${book.color}50`,
-                  borderRadius: "50%",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}>
+              {/* Central ornament + title — only shown without real cover */}
+              {!book.coverUrl && (
+                <>
                   <div style={{
-                    width: 32,
-                    height: 32,
-                    background: `${book.color}30`,
+                    position: "absolute",
+                    top: "50%",
+                    left: "50%",
+                    transform: "translate(-50%, -60%)",
+                    width: 120,
+                    height: 120,
+                    border: `1px solid ${book.color}30`,
                     borderRadius: "50%",
-                    border: `1px solid ${book.color}80`,
-                  }} />
-                </div>
-              </div>
-
-              {/* Title on cover */}
-              <div style={{
-                position: "absolute",
-                bottom: 40,
-                left: 24,
-                right: 24,
-                textAlign: "center",
-              }}>
-                <div style={{
-                  fontFamily: "'Cinzel', serif",
-                  fontSize: 13,
-                  fontWeight: 700,
-                  color: book.color,
-                  letterSpacing: 3,
-                  textTransform: "uppercase",
-                  marginBottom: 8,
-                }}>{book.title}</div>
-                <div style={{
-                  fontFamily: "'Cormorant Garamond', serif",
-                  fontSize: 10,
-                  color: "rgba(237,232,223,0.4)",
-                  letterSpacing: 2,
-                  fontStyle: "italic",
-                }}>Conrad Bachman</div>
-              </div>
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}>
+                    <div style={{
+                      width: 80,
+                      height: 80,
+                      border: `1px solid ${book.color}50`,
+                      borderRadius: "50%",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}>
+                      <div style={{
+                        width: 32,
+                        height: 32,
+                        background: `${book.color}30`,
+                        borderRadius: "50%",
+                        border: `1px solid ${book.color}80`,
+                      }} />
+                    </div>
+                  </div>
+                  <div style={{
+                    position: "absolute",
+                    bottom: 40,
+                    left: 24,
+                    right: 24,
+                    textAlign: "center",
+                  }}>
+                    <div style={{
+                      fontFamily: "'Cinzel', serif",
+                      fontSize: 13,
+                      fontWeight: 700,
+                      color: book.color,
+                      letterSpacing: 3,
+                      textTransform: "uppercase",
+                      marginBottom: 8,
+                    }}>{book.title}</div>
+                    <div style={{
+                      fontFamily: "'Cormorant Garamond', serif",
+                      fontSize: 10,
+                      color: "rgba(237,232,223,0.4)",
+                      letterSpacing: 2,
+                      fontStyle: "italic",
+                    }}>Conrad Bachman</div>
+                  </div>
+                </>
+              )}
 
               {/* Corner detail */}
               <div style={{
