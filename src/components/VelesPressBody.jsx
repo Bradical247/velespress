@@ -224,11 +224,9 @@ function About(){
       </div>
       <OrnDivider/>
       <div style={{padding:"36px 48px 72px"}}>
-        <div style={{maxWidth:1100,margin:"0 auto",display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(220px,1fr))"}}>
-          {[{label:"Myth & Depth",text:"Every story is rooted in archetypal structures — the Egyptian divine system, the Jungian shadow, the Slavic underworld. We build from below."},{label:"Geopolitics & Mind",text:"The inner world and the outer world are not separate. Our fiction moves between state collapse and psychological crisis as if there were no border between them."},{label:"Independent",text:"We answer to the work. Founded in Prague, outside the major publishing centres, free to publish what larger houses cannot afford to believe in."}].map((p,i)=>{
-            const[r2,v2]=useInView(.1);
-            return(<div key={i} ref={r2} style={{...fx(v2,i*.1),padding:"28px 32px",borderLeft:i>0?"1px solid rgba(201,168,76,.08)":"none"}}><div style={{fontFamily:"'Cinzel',serif",fontSize:8.5,letterSpacing:4,color:"#C9A84C",textTransform:"uppercase",marginBottom:14}}>{p.label}</div><p style={{fontFamily:"'Cormorant Garamond',serif",fontSize:17,lineHeight:1.85,color:"rgba(237,232,223,.65)"}}>{p.text}</p></div>);
-          })}
+        <div style={{maxWidth:680,margin:"0 auto"}}>
+          <p style={{fontFamily:"'Cormorant Garamond',serif",fontSize:19,lineHeight:1.92,color:"rgba(237,232,223,.65)",fontStyle:"italic",marginBottom:20}}>We do not know, when a book begins, where it will end up. We have learned not to pretend otherwise.</p>
+          <p style={{fontFamily:"'Cormorant Garamond',serif",fontSize:17.5,lineHeight:1.9,color:"rgba(237,232,223,.5)"}}>What tends to find its way here: work interested in depth over surface, in the long view over the immediate, in what a story costs rather than what it promises. Work that trusts the reader. Work that is harder to categorise than it looks.</p>
         </div>
       </div>
     </section>

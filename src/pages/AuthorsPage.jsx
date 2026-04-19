@@ -82,15 +82,14 @@ export default function AuthorsPage() {
             <div style={{ width:40, height:1, background:`linear-gradient(to right,${gold},transparent)`, marginBottom:24 }} />
             <h2 style={{ ...S, fontSize:11, letterSpacing:5, textTransform:"uppercase", color:"rgba(201,168,76,.7)", marginBottom:24 }}>Biography</h2>
 
-            {/* BIO PLACEHOLDER — replace with your Amazon author bio */}
-            <p style={{ ...G, fontSize:18.5, lineHeight:1.92, color:"rgba(237,232,223,.72)", marginBottom:20 }}>
-              Conrad Bachman is the author of The Names Beneath series and The Patient Empires trilogy, published by Veles Press. Writing at the intersection of dark fantasy, geopolitical thriller, and historical fiction, his work draws on decade-long studies in Thelemic philosophy, Jungian depth psychology, Egyptian mythology, and the structural analysis of power.
+            <p style={{ ...G, fontSize:18.5, lineHeight:1.92, color:"rgba(237,232,223,.75)", marginBottom:20 }}>
+              Conrad is a writer drawn to the fault lines where history fractures, power shifts, and the inner life collides with the outer world. His work spans genres and registers, shaped by a restless engagement with depth psychology, mythology, geopolitics, and the long arc of human experience — from the intimate to the civilisational.
             </p>
-            <p style={{ ...G, fontSize:18.5, lineHeight:1.92, color:"rgba(237,232,223,.62)", marginBottom:20 }}>
-              Born in South Africa with Polish heritage, he has lived and worked in Prague since relocating to central Europe. The city's layered relationship to myth, occupation, and reinvention shapes the atmosphere of his fiction — particularly The Prague Variations, set across four eras of the city's history.
+            <p style={{ ...G, fontSize:18.5, lineHeight:1.92, color:"rgba(237,232,223,.65)", marginBottom:20 }}>
+              Born in South Africa and now based in Prague, Conrad writes across genres without apology — finding that the best stories refuse to be filed neatly away. What holds his work together is not form but obsession: with how people are shaped by forces larger than themselves, and how they push back.
             </p>
             <p style={{ ...G, fontSize:18.5, lineHeight:1.92, color:"rgba(237,232,223,.55)" }}>
-              By day he works as a network engineer. By night he builds fictional worlds with the same precision he brings to network infrastructure — architecturally sound, rigorously tested, designed to carry weight. Conrad Bachman is a pen name.
+              When he is not writing, Conrad works in technology infrastructure, reads widely across history and analytical psychology, and wanders the older parts of Central Europe looking for places where the past has not yet finished speaking.
             </p>
           </div>
 

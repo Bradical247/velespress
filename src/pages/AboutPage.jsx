@@ -54,12 +54,12 @@ export default function AboutPage() {
         <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:48, marginBottom:64 }}>
           <div>
             <div style={{ width:40, height:1, background:`linear-gradient(to right,${gold},transparent)`, marginBottom:24 }} />
-            <h2 style={{ ...S, fontSize:11, letterSpacing:5, textTransform:"uppercase", color:gold, marginBottom:20 }}>The Press</h2>
+            <h2 style={{ ...S, fontSize:11, letterSpacing:5, textTransform:"uppercase", color:gold, marginBottom:20 }}>The Name</h2>
             <p style={{ ...G, fontSize:18.5, lineHeight:1.9, color:"rgba(237,232,223,.72)", marginBottom:20 }}>
-              Veles Press is named for Veles — the Slavic deity of the underworld, wisdom, magic, and the wealth hidden beneath the earth. The god of what lies beneath. It was the right name for a press committed to fiction that goes below the surface of things.
+              The name is old. It belongs to whatever lives beneath the surface of things — to the part of a story that takes longest to reach, that resists easy naming, that reveals itself slowly or not at all.
             </p>
             <p style={{ ...G, fontSize:18.5, lineHeight:1.9, color:"rgba(237,232,223,.62)" }}>
-              We publish work that takes the long view. Work that earns its ambition. Work that trusts readers to follow it into difficult territory without flinching.
+              We did not choose it for where it came from. We chose it for what it points toward.
             </p>
           </div>
           <div>
@@ -76,19 +76,12 @@ export default function AboutPage() {
 
         {/* Three pillars */}
         <div style={{ borderTop:"1px solid rgba(201,168,76,.08)", paddingTop:56, marginBottom:64 }}>
-          <h2 style={{ ...S, fontSize:11, letterSpacing:5, textTransform:"uppercase", color:"rgba(201,168,76,.7)", marginBottom:36 }}>What We Publish</h2>
-          <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit,minmax(220px,1fr))", gap:0 }}>
-            {[
-              { label:"Myth & Depth", text:"Stories rooted in archetypal structures — the Egyptian divine system, the Jungian shadow, the Slavic underworld. We build from below. The surface of our fiction is always doing double work: the story you are reading, and the larger story it is part of." },
-              { label:"Geopolitics & Mind", text:"The inner world and the outer world are not separate. Our fiction moves between state collapse and psychological crisis as though there were no border between them — because there is not. The fracture lines of civilisation run through individual souls." },
-              { label:"Independence", text:"We answer to the work. Founded in Prague and operating outside the major publishing centres, we are free to publish what larger houses cannot afford to believe in. Difficult. Precise. Atmospheric. Not for everyone — deliberately." },
-            ].map((p, i) => (
-              <div key={i} style={{ padding:"0 32px 0 0", borderRight:i<2?"1px solid rgba(201,168,76,.08)":"none", paddingRight:i<2?32:0, paddingLeft:i>0?32:0, marginBottom:24 }}>
-                <div style={{ ...S, fontSize:9, letterSpacing:4, color:gold, textTransform:"uppercase", marginBottom:16 }}>{p.label}</div>
-                <p style={{ ...G, fontSize:17.5, lineHeight:1.88, color:"rgba(237,232,223,.65)" }}>{p.text}</p>
-              </div>
-            ))}
-          </div>
+          <p style={{ ...G, fontSize:20, lineHeight:1.9, color:"rgba(237,232,223,.68)", fontStyle:"italic", maxWidth:640, marginBottom:28 }}>
+            We do not know, when a book begins, where it will end up. We have learned not to pretend otherwise.
+          </p>
+          <p style={{ ...G, fontSize:18.5, lineHeight:1.9, color:"rgba(237,232,223,.55)", maxWidth:600 }}>
+            What we can say is this: the work that finds its way here tends to be interested in depth over surface, in the long view over the immediate, in what a story costs rather than what it promises. It tends to trust the reader. It tends to be harder to categorise than it looks.
+          </p>
         </div>
 
         {/* Location */}
